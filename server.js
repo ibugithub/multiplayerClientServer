@@ -36,14 +36,10 @@ app.use(cors({
 app.use(setHeaders);
 
 // Serve the game folder as static files
-app.use(express.static(path.join(__dirname, '3dWorld')));
-app.use(express.static(path.join(__dirname, 'testClient')));
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '3dWorld', 'index.html'));
+  res.send('Hello');
 });
-app.get('/client', (req, res) => {
-  res.sendFile(path.join(__dirname, 'testClient', 'index.html'));
-});
+
 
 
 socketController(io)
