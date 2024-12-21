@@ -1,8 +1,0 @@
-[
-  {
-    "origin": ["https://opendoorsaccelerator.df.r.appspot.com", "http://localhost:3003"],
-    "method": ["GET", "HEAD"],
-    "responseHeader": ["Content-Type"],
-    "maxAgeSeconds": 3600
-  }
-]
