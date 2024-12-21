@@ -41,7 +41,6 @@ app.get('/', (req, res) => {
 });
 
 
-
 socketController(io)
 
 app.use((req, res, next) => {
